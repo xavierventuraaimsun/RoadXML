@@ -119,9 +119,6 @@ template <class T> class CountedPtr
 		bool operator==(const CountedPtr& rhs) const
 		{ return (static_cast<T*>(rhs) == mObject); }
 
-		bool operator==(const T* rhs) const
-		{ return (rhs == mObject); }
-
 		bool operator==(T* rhs) const
 		{ return (rhs == mObject); }
 
